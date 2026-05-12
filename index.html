@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jaseer Gypsum Ceiling - Pro</title>
+<title>Jaseer Gypsum Ceiling - Ultra Pro</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -23,14 +24,14 @@ color:white;
 overflow-x:hidden;
 }
 
-/* FLOATING BACKGROUND LIGHTS */
+/* FLOAT LIGHTS */
 .light{
 position:absolute;
 width:200px;
 height:200px;
 background:#f5c542;
 filter:blur(120px);
-opacity:0.3;
+opacity:0.25;
 animation:move 8s infinite alternate;
 }
 
@@ -63,14 +64,13 @@ nav a{
 color:white;
 margin:0 10px;
 text-decoration:none;
-transition:0.3s;
 }
 
 nav a:hover{
 color:#f5c542;
 }
 
-/* HERO SLIDER */
+/* SLIDER */
 .slider{
 position:relative;
 width:100%;
@@ -105,18 +105,18 @@ top:50%;
 left:50%;
 transform:translate(-50%,-50%);
 text-align:center;
-background:rgba(0,0,0,0.5);
+background:rgba(0,0,0,0.6);
 padding:20px;
 border-radius:10px;
 }
 
 .hero-text h2{
-font-size:40px;
+font-size:35px;
 color:#f5c542;
 }
 
 .hero-text button{
-margin-top:15px;
+margin-top:10px;
 padding:10px 20px;
 background:#f5c542;
 border:none;
@@ -132,7 +132,15 @@ text-align:center;
 
 .section-title{
 color:#f5c542;
-margin-bottom:30px;
+margin-bottom:20px;
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.08);
+padding:20px;
+border-radius:10px;
+margin:10px;
 }
 
 /* GALLERY */
@@ -145,30 +153,24 @@ gap:15px;
 .gallery img{
 width:100%;
 border-radius:10px;
-transition:0.4s;
+transition:0.3s;
 }
 
 .gallery img:hover{
 transform:scale(1.1);
 }
 
-/* CARD */
-.card{
-background:rgba(255,255,255,0.08);
-padding:20px;
-border-radius:10px;
-margin:10px;
+/* AD SECTION */
+#ad .card{
+border:2px solid #f5c542;
+background:#111;
 }
 
-/* CONTACT */
-input,textarea{
-width:100%;
-padding:10px;
-margin:10px 0;
-border:none;
-border-radius:5px;
+#ad h3{
+color:#f5c542;
 }
 
+/* BUTTON */
 .btn{
 background:#f5c542;
 padding:10px;
@@ -178,7 +180,7 @@ font-weight:bold;
 width:100%;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -187,24 +189,15 @@ background:#25D366;
 padding:15px;
 border-radius:50%;
 font-size:20px;
-color:white;
 text-decoration:none;
-box-shadow:0 0 10px #25D366;
+color:white;
 }
 
-/* MAP */
-iframe{
-width:100%;
-height:300px;
-border:none;
-border-radius:10px;
-}
-
+/* FOOTER */
 footer{
 background:black;
 text-align:center;
 padding:20px;
-margin-top:20px;
 }
 
 </style>
@@ -221,12 +214,13 @@ margin-top:20px;
 <nav>
 <a href="#home">Home</a>
 <a href="#about">About</a>
+<a href="#ad">Offer</a>
 <a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
-<!-- HERO SLIDER -->
+<!-- HERO -->
 <section id="home" class="slider">
 
 <div class="slides">
@@ -250,27 +244,65 @@ Get Free Quote
 <h2 class="section-title">About Us</h2>
 <div class="card">
 <p>
-We are experts in Gypsum Ceiling Design & Installation.
-High quality modern interior ceiling works for homes & offices.
+We design modern Gypsum ceilings with high quality finishing for homes & offices.
 </p>
 </div>
 </section>
 
+<!-- ADVERTISEMENT -->
+<section id="ad">
+
+<h2 class="section-title">🔥 Special Offer / விளம்பரம்</h2>
+
+<div class="card">
+
+<h3>🏗️ உங்கள் வீடும் அலுவலகமும் மின்னட்டும்!</h3>
+
+<p>
+✨ Modern False Ceiling<br>
+✨ Elegant Partition Works<br>
+✨ LED Panel Designs
+</p>
+
+<hr style="margin:10px 0;border:0.5px solid #444;">
+
+<p>
+🌟 Class + Creativity = உங்கள் ஸ்டைல்<br>
+🔧 Professional Work • Budget Friendly<br>
+🏆 Quality + Trust + On Time Work
+</p>
+
+<br>
+
+<p style="color:#f5c542;">
+📞 Call / WhatsApp: 077 181 5849
+</p>
+
+<p>
+📍 Sammanthurai & All Island Service
+</p>
+
+</div>
+
+</section>
+
 <!-- GALLERY -->
 <section id="gallery">
+
 <h2 class="section-title">Our Works</h2>
 
 <div class="gallery">
 <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2a5a">
 <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb">
-<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
 <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471">
+<img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6">
 </div>
 
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
+
 <h2 class="section-title">Contact Us</h2>
 
 <div class="card">
@@ -280,18 +312,13 @@ High quality modern interior ceiling works for homes & offices.
 <button class="btn">Send</button>
 </div>
 
-<br>
-
-<h3>Our Location</h3>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18..."></iframe>
-
 </section>
 
-<!-- WHATSAPP FLOAT -->
+<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/94771815849">💬</a>
 
 <footer>
-© 2026 Jaseer Gypsum Ceiling | Ultra Pro Website
+© 2026 Jaseer Gypsum Ceiling | All Rights Reserved
 </footer>
 
 </body>
