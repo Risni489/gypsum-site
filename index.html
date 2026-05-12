@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaseer Gypsum Ceiling - Pro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+overflow-x:hidden;
+}
+
+/* FLOATING BACKGROUND LIGHTS */
+.light{
+position:absolute;
+width:200px;
+height:200px;
+background:#f5c542;
+filter:blur(120px);
+opacity:0.3;
+animation:move 8s infinite alternate;
+}
+
+.light:nth-child(1){top:10%;left:10%;}
+.light:nth-child(2){bottom:10%;right:10%;}
+
+@keyframes move{
+from{transform:translateY(0px);}
+to{transform:translateY(80px);}
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+header h1{
+color:#f5c542;
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#f5c542;
+}
+
+/* HERO SLIDER */
+.slider{
+position:relative;
+width:100%;
+height:85vh;
+overflow:hidden;
+}
+
+.slides{
+display:flex;
+width:300%;
+height:100%;
+animation:slide 12s infinite;
+}
+
+.slides img{
+width:100%;
+height:85vh;
+object-fit:cover;
+}
+
+@keyframes slide{
+0%{transform:translateX(0);}
+33%{transform:translateX(-100%);}
+66%{transform:translateX(-200%);}
+100%{transform:translateX(0);}
+}
+
+/* HERO TEXT */
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+background:rgba(0,0,0,0.5);
+padding:20px;
+border-radius:10px;
+}
+
+.hero-text h2{
+font-size:40px;
+color:#f5c542;
+}
+
+.hero-text button{
+margin-top:15px;
+padding:10px 20px;
+background:#f5c542;
+border:none;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* SECTIONS */
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+.section-title{
+color:#f5c542;
+margin-bottom:30px;
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.08);
+padding:20px;
+border-radius:10px;
+margin:10px;
+}
+
+/* CONTACT */
+input,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:none;
+border-radius:5px;
+}
+
+.btn{
+background:#f5c542;
+padding:10px;
+border:none;
+cursor:pointer;
+font-weight:bold;
+width:100%;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+color:white;
+text-decoration:none;
+box-shadow:0 0 10px #25D366;
+}
+
+/* MAP */
+iframe{
+width:100%;
+height:300px;
+border:none;
+border-radius:10px;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="light"></div>
+<div class="light"></div>
+
+<header>
+<h1>Jaseer Gypsum</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HERO SLIDER -->
+<section id="home" class="slider">
+
+<div class="slides">
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+<img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6">
+<img src="https://images.unsplash.com/photo-1501183638710-841dd1904471">
+</div>
+
+<div class="hero-text">
+<h2>Luxury Gypsum Ceiling Works</h2>
+<p>Modern | Stylish | Professional Design</p>
+<button onclick="window.location.href='https://wa.me/94771815849'">
+Get Free Quote
+</button>
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="section-title">About Us</h2>
+<div class="card">
+<p>
+We are experts in Gypsum Ceiling Design & Installation.
+High quality modern interior ceiling works for homes & offices.
+</p>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2 class="section-title">Our Works</h2>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1505691723518-36a5ac3b2a5a">
+<img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb">
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+<img src="https://images.unsplash.com/photo-1501183638710-841dd1904471">
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+
+<div class="card">
+<input type="text" placeholder="Your Name">
+<input type="text" placeholder="Phone Number">
+<textarea rows="4" placeholder="Message"></textarea>
+<button class="btn">Send</button>
+</div>
+
+<br>
+
+<h3>Our Location</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18..."></iframe>
+
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp" href="https://wa.me/94771815849">💬</a>
+
+<footer>
+© 2026 Jaseer Gypsum Ceiling | Ultra Pro Website
+</footer>
+
+</body>
+</html>
